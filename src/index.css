@@ -1,13 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom variables */
+:root {
+  --DarkPurple: #240d57;
+  --Purple: #501fc1;
+  --LightPurple: #8456ec;
+  --Pink: #e87bf8;
+
+  --SecondaryPurple1: #ccb6ff;
+  --SecondaryPurple2: #ede5ff;
+  --SecondaryPurple3: #f6f2ff;
+
+  --PrimaryFont: "Helvetica Neue, sans-serif";
+}
+
 body {
+  background: linear-gradient(0deg, #f6f2ff, #f6f2ff), #fbfaff;
+  color: #240d57;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Helvetica";
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+
+@media only screen and (max-width: 780px) {
+  .wrapper {
+    flex-direction: column;
+  }
 }

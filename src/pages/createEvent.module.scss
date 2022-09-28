@@ -1,0 +1,124 @@
+.createEventContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 80vh;
+
+  h2 {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    margin: 0 1rem 0.5rem;
+    padding: 2rem;
+    min-width: 800px;
+  }
+}
+
+.formInputContainer {
+  margin-bottom: 1.5rem;
+  width: 100%;
+
+  input {
+    border: thin solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px -1px rgb(0 0 0 / 10%);
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    width: 100%;
+  }
+
+  label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+    span {
+      color: #e61445;
+    }
+  }
+}
+
+.imgSelectContainer {
+  display: flex;
+  justify-content: center;
+
+  button {
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+.formFooter {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+
+  button {
+    cursor: pointer;
+    font-size: 1rem;
+    background: #8456ec;
+    color: white;
+    margin: 0;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    border: none;
+    transition: 0.2s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  a {
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    margin: 0;
+    transition: 0.2s;
+
+    &:hover {
+      border: none;
+      color: #8456ec;
+    }
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .createEventContainer {
+    form {
+      min-width: 500px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .createEventContainer {
+    form {
+      padding: 1rem;
+      min-width: 400px;
+    }
+  }
+}

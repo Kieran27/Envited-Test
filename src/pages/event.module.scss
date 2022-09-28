@@ -1,0 +1,63 @@
+.eventContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.eventLeft {
+  width: 50%;
+}
+
+.eventRight {
+  width: 50%;
+  img {
+    max-width: 100%;
+  }
+}
+
+.eventName {
+  h2 {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    color: #240d57;
+  }
+
+  p {
+    margin-top: 1rem;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #828282;
+  }
+}
+
+.eventData {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .eventContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .eventLeft {
+    width: 100%;
+  }
+
+  .eventRight {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
